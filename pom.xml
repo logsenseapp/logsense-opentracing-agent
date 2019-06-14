@@ -6,7 +6,7 @@
 
     <groupId>com.logsense</groupId>
     <artifactId>logsense-opentracing-agent</artifactId>
-    <version>1.1.6</version>
+    <version>1.1.7</version>
     <packaging>jar</packaging>
 
     <name>logsense-opentracing-agent</name>
@@ -15,7 +15,7 @@
 
     <properties>
         <logsense.version>${project.version}</logsense.version>
-        <specialagent.version>1.1.2</specialagent.version>
+        <specialagent.version>1.2.1-SNAPSHOT</specialagent.version>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -57,184 +57,220 @@
     <dependencies>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-okhttp</artifactId>
+            <artifactId>specialagent-okhttp</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-jdbc</artifactId>
+            <artifactId>specialagent-jdbc</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-concurrent</artifactId>
+            <artifactId>specialagent-concurrent</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-mongo-driver</artifactId>
+            <artifactId>specialagent-mongo-driver</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-web-servlet-filter</artifactId>
+            <artifactId>specialagent-web-servlet-filter</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-camel</artifactId>
+            <artifactId>specialagent-camel</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-aws-sdk</artifactId>
+            <artifactId>specialagent-aws-sdk</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-cassandra-driver</artifactId>
+            <artifactId>specialagent-cassandra-driver</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-jms-1</artifactId>
+            <artifactId>specialagent-jms-1</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-jms-2</artifactId>
+            <artifactId>specialagent-jms-2</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-elasticsearch-client-6</artifactId>
+            <artifactId>specialagent-elasticsearch-client-6</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-rxjava-2</artifactId>
+            <artifactId>specialagent-rxjava-2</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-kafka-client</artifactId>
+            <artifactId>specialagent-kafka-client</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-asynchttpclient</artifactId>
+            <artifactId>specialagent-asynchttpclient</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-rabbitmq-client</artifactId>
+            <artifactId>specialagent-rabbitmq-client</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-spring-rabbitmq</artifactId>
+            <artifactId>specialagent-spring-rabbitmq</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-thrift</artifactId>
+            <artifactId>specialagent-thrift</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-grpc</artifactId>
+            <artifactId>specialagent-grpc</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-jedis</artifactId>
+            <artifactId>specialagent-jedis</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-apache-httpclient</artifactId>
+            <artifactId>specialagent-apache-httpclient</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-lettuce</artifactId>
+            <artifactId>specialagent-lettuce</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-spring-web</artifactId>
+            <artifactId>specialagent-spring-web</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-spring-webmvc</artifactId>
+            <artifactId>specialagent-spring-webmvc</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-spring-webflux</artifactId>
+            <artifactId>specialagent-spring-webflux</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-redisson</artifactId>
+            <artifactId>specialagent-redisson</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-hazelcast</artifactId>
+            <artifactId>specialagent-hazelcast</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-spymemcached</artifactId>
+            <artifactId>specialagent-spymemcached</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
-            <artifactId>opentracing-specialagent-jdbi</artifactId>
+            <artifactId>specialagent-jdbi</artifactId>
+            <version>${specialagent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib.specialagent.rules</groupId>
+            <artifactId>specialagent-feign</artifactId>
+            <version>${specialagent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib.specialagent.rules</groupId>
+            <artifactId>specialagent-hystrix</artifactId>
+            <version>${specialagent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib.specialagent.rules</groupId>
+            <artifactId>specialagent-zuul</artifactId>
+            <version>${specialagent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib.specialagent.rules</groupId>
+            <artifactId>specialagent-spring-kafka</artifactId>
+            <version>${specialagent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib.specialagent.rules</groupId>
+            <artifactId>specialagent-spring-scheduling</artifactId>
+            <version>${specialagent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib.specialagent.rules</groupId>
+            <artifactId>specialagent-spring-websocket</artifactId>
+            <version>${specialagent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib.specialagent.rules</groupId>
+            <artifactId>specialagent-spring-jms</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
 <!--        <dependency>-->
-<!--            <groupId>io.opentracing.contrib.specialagent.rules</groupId>-->
-<!--            <artifactId>opentracing-specialagent-feign</artifactId>-->
-<!--            <version>${specialagent.version}</version>-->
-<!--            <scope>provided</scope>-->
+<!--            <groupId>com.logsense</groupId>-->
+<!--            <artifactId>logsense-opentracing</artifactId>-->
+<!--            <optional>true</optional>-->
+<!--            <version>${logsense.version}</version>-->
 <!--        </dependency>-->
-        <dependency>
-            <groupId>com.logsense</groupId>
-            <artifactId>logsense-opentracing</artifactId>
-            <optional>true</optional>
-            <version>${logsense.version}</version>
-        </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent</groupId>
             <artifactId>opentracing-specialagent</artifactId>
