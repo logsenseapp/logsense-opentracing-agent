@@ -6,7 +6,7 @@
 
     <groupId>com.logsense</groupId>
     <artifactId>logsense-opentracing-agent</artifactId>
-    <version>1.1.7</version>
+    <version>1.1.8-beta</version>
     <packaging>jar</packaging>
 
     <name>logsense-opentracing-agent</name>
@@ -100,6 +100,12 @@
         <dependency>
             <groupId>io.opentracing.contrib.specialagent.rules</groupId>
             <artifactId>specialagent-cassandra-driver</artifactId>
+            <version>${specialagent.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.opentracing.contrib.specialagent.rules</groupId>
+            <artifactId>specialagent-cassandra2-driver</artifactId>
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -265,12 +271,12 @@
             <version>${specialagent.version}</version>
             <scope>provided</scope>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.logsense</groupId>-->
-<!--            <artifactId>logsense-opentracing</artifactId>-->
-<!--            <optional>true</optional>-->
-<!--            <version>${logsense.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.logsense</groupId>
+            <artifactId>logsense-opentracing</artifactId>
+            <optional>true</optional>
+            <version>${logsense.version}</version>
+        </dependency>
         <dependency>
             <groupId>io.opentracing.contrib.specialagent</groupId>
             <artifactId>opentracing-specialagent</artifactId>
